@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: "Poopins",sans-serif;
 }
+
  .hero_section{
     background: url(./images/heroSectionBackground.png);
     /* background-size: cover;
