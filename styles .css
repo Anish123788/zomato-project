@@ -1,0 +1,13 @@
+*{
+    margin:0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Poopins",sans-serif;
+}
+ .hero_section{
+    background: url(./images/heroSectionBackground.png);
+    /* background-size: cover;
+    background-position: center; */
+    color: white;
+    min-height: 60vh;
+}
