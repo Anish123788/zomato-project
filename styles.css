@@ -147,6 +147,7 @@
 } 
 .we_offer_content{
     padding: 10px;
+    cursor: default;
 }
 .we_offer_content h2{
     font-size: 20px;
@@ -154,4 +155,345 @@
 }
 .we_offer_content p{
     font-size: 12.5px;
+}
+/* collection cards section starts here */
+.collections h1{
+  font-weight: 600px;
+}
+.sub_heading_container{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    gap: 1rem;
+}
+.sub_heading_container span:nth-child(2){
+    color:rgb(231, 23, 23);
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.collection_cards_containers{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    
+}
+.collection_cards_containers .cards{
+    height: 300px;
+    width: 250px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    transition: all 1s ease-in-out;
+    margin-right: 12px;
+}
+ .cards1 {
+    background-image: url(./images/collection1.jpg);
+ }
+ .cards2 {
+    background-image: url(./images/collection2.jpg);
+ }
+ .cards3 {
+    background-image: url(./images/collection3.jpg);
+ }
+ .cards4 {
+    background-image: url(./images/collection4.jpg);
+ }
+ .overlay{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(
+        0deg,
+        rgba(212,0,0,1) 0%,
+        rgba(215,0,2,1) 50%,
+        rgba(215,0,0,1) 85%,
+    );
+    z-index: 5;
+ }
+ .collection_cards_containers .cards:hover{
+    transform: scale(1.1);
+ }
+
+
+ .collection_cards_containers .cards .content{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+    z-index: 6;
+    cursor: default;
+ }
+ 
+ .content h4{
+    font-weight: 400;
+    letter-spacing: 0.5px;
+ }
+/* for phone and mail input section  */
+.get_the_app{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 251, 247);
+    width: 100%;
+    padding: 3rem 6rem;
+}
+
+.get_the_app .semiContainer{
+    width: 60%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.get_the_app .semiContainer .left{
+    flex: 2;
+}
+
+.get_the_app .semiContainer .left img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+} 
+ 
+.get_the_app .semiContainer .right{
+    flex: 3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.right h1{
+    font-weight: 400;
+    font-size: 2rem;
+}
+.right p{
+    font-size: 0.8rem;
+}
+.right .radio_buttton_container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.right .radio_buttton_container div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.right .radio_buttton_container div input{
+    height: 15px;
+    width: 15px;
+    accent-color: rgb(239,79,95);
+}
+
+.right .input_container{
+    display: flex;
+    gap: 0.5rem;
+}
+.input_container{
+    flex-wrap: wrap;
+}
+.input_container button,
+.input_container input{
+    padding:10px 12px;
+}
+.input_container input{
+    flex: auto;
+    border: 1.5px solid gray;
+    outline: none;
+    border-radius: 5px;
+}
+.input_container button{
+    border: none;
+    background-color: rgb(239,79,95);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.Download_app_container{
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+.Download_app_container h5{
+    font-weight: 400;
+    color: gray;
+}
+.Download_app_container div img{
+    width: 35%;
+}
+/* media queries */
+@media only screen and (max-width: 1300px){ 
+    /* here the if we adjust the screen size max to 1300px the properties of image section will change it will take 80% of screen size*/
+    .get_the_app .semiContainer .left,
+    .get_the_app .semiContainer .right{
+        flex: 1;
+    }
+    .get_the_app .semiContainer{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 900px){
+    /* here the if we adjust the screen size max to 900px the properties of image section will change it will take 95% of screen size*/
+    .get_the_app{
+        padding: 2rem 0;
+    }
+    .get_the_app .semiContainer{
+        width: 95%;
+        flex-direction: column; /*here in exterme small screen size the right part will take a new line to adust things properly*/
+    }
+}
+/* for the part just above the footer part of website */
+.explore_option h5{
+    font-weight: 400;
+    font-size: 2rem;
+}
+select,h5{
+    margin-bottom: 15px;
+} 
+select{
+    display: flex;
+    padding: 1.5rem 2.4rem;
+    width: 95%;
+    margin-bottom: 15px;
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 0.7rem;
+}
+select,label{
+    font-weight: 300;
+    font-size: 20px;
+    cursor: default; 
+}
+select:hover{
+    background-color: rgb(212, 209, 209);
+}
+
+/* footer section */
+.footer{
+    width: 100%;
+   
+}
+.footer_section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+.footer_section img{
+    width: 130px;
+}
+
+.section1_button_container{
+    display: flex;
+    gap: 1rem;
+}
+.section1_button_container button{
+    padding: 5px;
+    width: 90px;
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 5px;
+    background-color: transparent;
+    gap: 5px;
+    cursor:pointer;
+}
+
+.navigation_container{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+    /* shorthand of grid-tampalte fr=fragment*/
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: auto;
+    gap: 1rem;
+    padding: 3rem 0;
+}
+
+.link_container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.link_container h5{
+    font-weight: 500;
+    font-size: 15px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+}
+
+.fotter_link{
+    text-decoration: none;
+    color: gray;
+    font-size: 12.5px;
+    font-weight: 300;
+}
+.fotter_link:hover{
+    color: black;
+}
+
+.section_links_container button{
+    background-color: black;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.section_links_container button i{
+    color: white;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer_section_logos{
+    /* position: relative;
+    max-width: 100%;
+    width: 13.7rem;
+    height: 4rem; */
+    /* this is from official website */
+    /* this is for our side */
+    width: 100%;
+}
+
+.disclaimer{
+    width: 95%;
+    color: gray;
+    margin: auto;
+    border-top: 1px solid gray;
+    padding-top: 1.5rem;
+}
+
+/* media queries for footer */
+@media only screen and (max-width: 900px){
+    .navigation_container{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .navigation_container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media only screen and (max-width: 320px){
+    .navigation_container{
+        grid-template-columns: repeat(1,1fr);
+    }
 }
